@@ -1,0 +1,30 @@
+
+#side-menu {
+    background-color: lightgrey;
+}
+
+#content {
+	padding: 10px;
+}
+
+.panel-default {
+    margin: 10px;
+}
+
+.sidebar-nav {
+    
+}
+
+.container {
+    width: 100%;
+    padding: 0px;
+}
+
+.page-header {
+    margin-left: 3%;
+}
+
+#page-body {
+    background-color: #EFEFEF;	
+    height: 100%;
+}

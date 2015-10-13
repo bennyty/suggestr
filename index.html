@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="./img/favicon.ico">
+
+	<title>Suggestr</title>
+	
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="./css/index.css"> 
+</head>
+
+<body>
+
+	<div class="page-header">
+		<h1>Suggestr</h1>
+		<p class="lead">Yay Suggestrions!</p>
+	</div>
+
+	<div class="row" id="page-body">
+		<div class="col-md-5" id="sidebar">
+			<ul class="list-group">
+				<li class="list-group-item">
+					<span class="badge">CSCI 1010</span>
+					Intro to Computer Programming
+				</li>
+				<li class="list-group-item">
+					<span class="badge">CSCI 2300</span>
+					Principles of Software
+				</li>
+				<li class="list-group-item">
+					<span class="badge">RPI 007</span>
+					I hate Algorithms
+				</li>
+				<li class="list-group-item">
+					<span class="badge">Ben</span>
+					Espey
+				</li>
+				<li class="list-group-item">
+					<span class="badge">Lucien</span>
+					Your last name is really long
+				</li>
+			</ul>
+		</div> <!-- /Sidebar -->
+
+
+
+		<div class="col-md-7">
+			<div class="container">
+				<div id="content">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search for courses by typing part of the name or title">
+						<span class="input-group-addon">Search</span>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">CSCI 2100 Data Structures</h3>
+						</div>
+						<div class="panel-body">
+							<div class="btn-group" role="group">
+								<button type="button" class="btn btn-success">Add</button>
+								<button type="button" class="btn btn-primary">Postpone</button>
+								<button type="button" class="btn btn-danger">Ignore</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- /col-md-7 -->
+	</div>
+</body>
+</html>
