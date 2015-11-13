@@ -10,6 +10,9 @@ Determine Jaccard Index, Levenshtein distance.
 from collections import defaultdict
 import MySQLdb as mdb
 import operator
+from urlparse import urlparse
+import sys
+
 #import suggestr
 
 class Student():
@@ -154,27 +157,9 @@ def getSuggestedCourses(s,s4):
 
 
 def main():
-    #print "start"
     s = Database()
-
-    student1 = s.getStudent(100)
-    student2 = s.getStudent(151)
-    student3 = s.getStudent(151)
-    student3.taken.append("Chinese I")
-    #print student1.getTaken()
-    #print student2.getTaken()
-    #print jaccardIndex(student1.getTaken(),student2.getTaken())
-    s1 = student1.getTaken()
-    s2 = student2.getTaken()
-    s3 = student3.getTaken()
-    #print levenshteinDistance(s1,len(s1),s2,len(s2))
-    #print s2,s3
-    #print levenshteinDistance(s2,len(s2),s3,len(s3))
-    #print jaccardIndex(s2,s3)
-
-    #print "\n\n\n\n\n"
-    #print s2
-
+    
+    o = urlparse('http://www.')
     classes1 = ["Chemistry I","Calculus I","Introductory Economics","Honors Physics I"]
 
     print "Physics:",classes1,"\n->",getSuggestedCourses(s,classes1),"\n\n"
@@ -226,9 +211,14 @@ def main():
     #print jaccardIndex(classes1,classes2)
     #print "\n\n\n",s.getAllCourses()[0:20]
     
-
+    print sys.argv[1]
     ##add like a "decision factor"
- 
+    ## schedule.py?id=100
+    ## import urlparse.
+    ## input(session_id) = '990'
+    ##SETUP to take a session ID as an argument, and go look at session database, get all actions for that session
+    ##create schedule object, and run ml on it, and then return JSON of all suggested courses.
+    ## output(course_ids) = JSON = {31000,32332,32278}
         
  
         
